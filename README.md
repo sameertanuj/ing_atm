@@ -27,6 +27,7 @@ The app doesn't allow duplicate insertions based on address.
 - When a post API is called the service will check for the duplicates and insert only the unique values.
 - In case we want to update the current values use the PUT API.
 - Get the full list using get call.
+- Master Data will get refreshed every day at midnight using a scheduler
 ## API
 Below is a list of API endpoints with their respective input and output. Please note that the application needs to be
 running for the following endpoints to work.
