@@ -22,6 +22,11 @@ The app doesn't allow duplicate insertions based on address.
 ```console
   $ ./mvnw spring-boot:run
 ```
+## How it works
+- Once application is started it will get the master data from the https://www.ing.nl/api/locator/atms/ and loads the data to local DB.
+- When a post API is called the service will check for the duplicates and insert only the unique values.
+- In case we want to update the current values use the PUT API.
+- Get the full list using get call.
 ## API
 Below is a list of API endpoints with their respective input and output. Please note that the application needs to be
 running for the following endpoints to work.
